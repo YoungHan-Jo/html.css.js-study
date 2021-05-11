@@ -1,0 +1,26 @@
+body {
+  background-color: papayawhip;
+  color: midnightblue;
+  font-family: Palatino;
+}
+
+.header {
+  background-color: cornflowerblue;
+  border: solid midnightblue 4px;
+  padding: 20px 80px;
+}
+
+.photo {
+  display: block;
+  background-color: pink;
+  width: 400px;
+  border: 6px solid saddlebrown 6px;
+  padding: 20px;
+  margin: 40px auto;
+}
+
+.footer {
+  background-color: cornflowerblue;
+  border: solid midnightblue 4px;
+  padding: 20px 80px;
+}
