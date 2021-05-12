@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(226, 211, 222);
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.5em;
+}
+hr {
+  border-top: 8px dotted tomato;
+  border-bottom: none;
+  width: 25%;
+}

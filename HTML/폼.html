@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 태그</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="">이름</label>
+        <input type="text" autofocus required />
+      </div>
+      <div>
+        <label for="">비밀번호</label>
+        <input type="password" minlength="4" maxlength="7" size="5" />
+      </div>
+      <div>
+        <label for="">이메일</label>
+        <input type="email" placeholder="이메일을 입력해 주세요." />
+      </div>
+      <div>
+        <label for="">메세지</label>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="">성별</label>
+        <select>
+          <option value="남성">남성</option>
+          <option value="여성">여성</option>
+        </select>
+      </div>
+      <div>
+        <label for="">나이</label>
+        <input type="number" />
+      </div>
+      <div>
+        <label for="">생년월일</label>
+        <input type="date" />
+      </div>
+      <!-- radio name은 같아야 함 -->
+      <div>
+        <label for="">멤버쉽</label>
+        <input type="radio" name="membership" id="" checked />심플
+        <input type="radio" name="membership" id="" />스탠다드
+        <input type="radio" name="membership" id="" />슈퍼
+      </div>
+      <div>
+        <label for="">살것을 모두 고르세요</label>
+        <input type="checkbox" name="like1" id="" />오토바이
+        <input type="checkbox" name="like2" id="" />자동차
+        <input type="checkbox" name="like3" id="" />보트
+      </div>
+      <div>
+        <button type="submit">전송</button>
+        <button type="reset">리셋</button>
+      </div>
+    </form>
+  </body>
+</html>
