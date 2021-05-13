@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포지션: 절대 / 상대 좌표</title>
+    <style>
+      body {
+        height: 200vh;
+      }
+      .container {
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+        border: 1px solid tomato;
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .relative {
+        position: relative;
+        top: 15px;
+        left: 25px;
+      }
+      .absolute {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      .fixed {
+        background: violet;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red float-right"></div>
+      <div class="box absolute green float-left"></div>
+      <div class="box blue clear"></div>
+      <div class="box fixed"></div>
+    </div>
+  </body>
+</html>

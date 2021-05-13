@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플로트(float)</title>
+    <style>
+      .container {
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+        border: 1px solid tomato;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .float-left {
+        float: left;
+      }
+      .float-right {
+        float: right;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red float-right"></div>
+      <div class="box green float-left"></div>
+      <div class="box blue clear"></div>
+    </div>
+  </body>
+</html>
