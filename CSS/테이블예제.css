@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+  width: 600px;
+}
+
+table,
+td,
+th {
+  padding: 10px;
+}
+
+th {
+  background-color: skyblue;
+  color: white;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
