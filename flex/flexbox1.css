@@ -1,0 +1,31 @@
+html,
+body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+.home {
+  background-color: #96ceb4;
+  flex: 3;
+}
+.search {
+  background-color: #ff6f69;
+  flex: 4;
+}
+.logout {
+  background-color: skyblue;
+  flex: 3;
+}
+.container {
+  border: 5px solid #ffcc5c;
+}
