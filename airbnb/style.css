@@ -1,0 +1,19 @@
+@import "nav-bar.css";
+@import "header-main.css";
+@import "section.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+
+body {
+  background: url(img/airbnb-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 70vh;
+  margin: 0px;
+}

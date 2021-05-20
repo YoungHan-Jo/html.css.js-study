@@ -1,0 +1,12 @@
+.wherever {
+  margin: 0px 80px;
+}
+.wherever__list {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 20px;
+}
+.wherever__list__item img {
+  width: 100%;
+  border-radius: 10px;
+}
