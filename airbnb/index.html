@@ -2,10 +2,6 @@
 <html lang="en">
   <head>
     <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -21,7 +17,7 @@
       에어비앤비: 휴가용 임대 숙소, 통나무집, 비치 하우스, 독특한 숙소 및 체험
     </title>
   </head>
-  <header>
+  <body>
     <nav class="nav-bar">
       <div class="nav-bar__home">
         <i class="fab fa-airbnb fa-2x"></i>
@@ -41,45 +37,223 @@
         <div class="nav-bar__myPage__menu">
           <span><i class="fas fa-bars"></i></span>
           <span><i class="fas fa-user"></i></span>
+          <div class="nav-bar__myPage__menu__red-dot" id="red-dot"></div>
         </div>
       </div>
     </nav>
-    <div class="header-main">
-      <h1 class="header-main__title">
-        슬기로운 <br />
-        자연생활
-      </h1>
-      <p>
-        에어비앤비가 엄선한<br />
-        위시리스트를 만나보세요.
-      </p>
-      <button>여행 아이디어 얻기</button>
-    </div>
-  </header>
+    <header>
+      <div class="header-main">
+        <h1 class="header-main__title">
+          슬기로운 <br />
+          자연생활
+        </h1>
+        <p>
+          에어비앤비가 엄선한<br />
+          위시리스트를 만나보세요.
+        </p>
+        <button>여행 아이디어 얻기</button>
+      </div>
+    </header>
 
-  <section class="around">
-    <h1>가까운 여행지 둘러보기</h1>
-  </section>
-  <section class="wherever">
-    <h1>어디에서나 여행은 살아보는거야</h1>
-    <div class="wherever__list">
-      <div class="wherever__list__item">
-        <img src="img/wherever1.jpg" alt="" />
-        <div>자연생활을 만끽할 수 있는 숙소</div>
+    <section class="around">
+      <h1 class="around__title">가까운 여행지 둘러보기</h1>
+      <div class="around__list">
+        <div class="around__list__item">
+          <img src="img/around1.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>서울</span>
+            <span>차로 5시간 거리</span>
+          </div>
+        </div>
+        <div class="around__list__item">
+          <img src="img/around2.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>대구</span>
+            <span>차로 1.5시간 거리</span>
+          </div>
+        </div>
+        <div class="around__list__item">
+          <img src="img/around3.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>울산</span>
+            <span>차로 1시간 거리</span>
+          </div>
+        </div>
+        <div class="around__list__item">
+          <img src="img/around4.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>대전</span>
+            <span>차로 3.5시간 거리</span>
+          </div>
+        </div>
+        <div class="around__list__item">
+          <img src="img/around5.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>인천</span>
+            <span>차로 5.5시간 거리</span>
+          </div>
+        </div>
+        <div class="around__list__item">
+          <img src="img/around6.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>광주</span>
+            <span>차로 3.5시간 거리</span>
+          </div>
+        </div>
+        <div class="around__list__item">
+          <img src="img/around7.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>의정부시</span>
+            <span>차로 5.5시간 거리</span>
+          </div>
+        </div>
+        <div class="around__list__item">
+          <img src="img/around8.jpg" alt="" />
+          <div class="around__list__item__info">
+            <span>청주시</span>
+            <span>차로 4시간 거리</span>
+          </div>
+        </div>
       </div>
-      <div class="wherever__list__item">
-        <img src="img/wherever2.jpg" alt="" />
-        <div>독특한 공간</div>
+    </section>
+    <section class="wherever">
+      <h1 class="wherever__title">어디에서나, 여행은 살아보는거야!</h1>
+      <div class="wherever__list">
+        <div class="wherever__list__item">
+          <img src="img/wherever1.jpg" alt="" />
+          <span>자연생활을 만끽할 수 있는 숙소</span>
+        </div>
+        <div class="wherever__list__item">
+          <img src="img/wherever2.jpg" alt="" />
+          <span>독특한 공간</span>
+        </div>
+        <div class="wherever__list__item">
+          <img src="img/wherever3.jpg" alt="" />
+          <span>집 전체</span>
+        </div>
+        <div class="wherever__list__item">
+          <img src="img/wherever4.jpg" alt="" />
+          <span>반려동물 동반 가능</span>
+        </div>
       </div>
-      <div class="wherever__list__item">
-        <img src="img/wherever3.jpg" alt="" />
-        <div>집 전체</div>
+    </section>
+    <section class="toBeHost">
+      <img src="img/toBeHost.jpg" alt="" />
+      <div class="toBeHost__contents">
+        <h1>
+          호스트가<br />
+          되어보세요
+        </h1>
+        <p>
+          숙소를 공유하여 부수입을 올리고 새로운<br />
+          가능성을 만나세요.
+        </p>
+        <button>자세히 알아보기</button>
       </div>
-      <div class="wherever__list__item">
-        <img src="img/wherever4.jpg" alt="" />
-        <div>반려동물 동반 가능</div>
+    </section>
+    <section class="experience">
+      <h1 class="experience__title">체험 둘러보기</h1>
+      <span class="experience__sub"
+        >현지 전문가와 함께하는 독특한 액티비티에 오프라인이나 온라인으로 참여해
+        보세요.</span
+      >
+      <div class="experience__list">
+        <div class="experience__list__item">
+          <img src="img/exp1.jpg" alt="" />
+          <div class="experience__list__item__info">
+            <span>추천 컬렉션: 여행 본능을 깨우는 체험</span><br />
+            <span>온라인 체험으로 집에서 랜선 여행을 즐기세요.</span>
+          </div>
+        </div>
+        <div class="experience__list__item">
+          <img src="img/exp2.jpg" alt="" />
+          <div class="experience__list__item__info">
+            <span>온라인 체험</span><br />
+            <span>온라인 체험으로 집에서 랜선 여행을 즐기세요.</span>
+          </div>
+        </div>
+        <div class="experience__list__item">
+          <img src="img/exp3.jpg" alt="" />
+          <div class="experience__list__item__info">
+            <span>체험</span><br />
+            <span>온라인 체험으로 집에서 랜선 여행을 즐기세요.</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <body></body>
+    </section>
+    <footer>
+      <div class="footer__info">
+        <div class="footer__info__list">
+          <h4>소개</h4>
+          <ul>
+            <li>에어비앤비 이용 방법</li>
+            <li>뉴스룸</li>
+            <li>투자자 정보</li>
+            <li>에어비앤비 플러스</li>
+            <li>에어비앤비 Luxe</li>
+            <li>호텔투나잇</li>
+            <li>에어비앤비 비즈니스 프로그램</li>
+            <li>호스트 분들이 있기에 가능합니다</li>
+            <li>채용정보</li>
+            <li>창립자 편지</li>
+          </ul>
+        </div>
+        <div class="footer__info__list">
+          <h4>커뮤니티</h4>
+          <ul>
+            <li>다양성 및 소속감</li>
+            <li>접근성</li>
+            <li>에어비앤비 어소시에이트</li>
+            <li>구호 인력을 위한 숙소</li>
+            <li>게스트 추천</li>
+            <li>Airbnb.org</li>
+          </ul>
+        </div>
+        <div class="footer__info__list">
+          <h4>호스팅하기</h4>
+          <ul>
+            <li>숙소 호스팅</li>
+            <li>온라인 체험 호스팅하기</li>
+            <li>체험 호스팅하기</li>
+            <li>책임감 있는 호스팅</li>
+            <li>자료 센터</li>
+            <li>커뮤니티 센터</li>
+          </ul>
+        </div>
+        <div class="footer__info__list">
+          <h4>에어비앤비 지원</h4>
+          <ul>
+            <li>에어비앤비의 코로나19 대응 방안</li>
+            <li>도움말 센터</li>
+            <li>예약 취소 옵션</li>
+            <li>에어비앤비 이웃 민원 지원</li>
+            <li>신뢰와 안전</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__sites">
+        <div class="footer__sites__copyright">
+          <span
+            >&copy; 2021 Airbnb,Inc. &middot; 개인정보 처리방침 &middot;
+            이용약관 &middot; 사이트맵 &middot; 한국의 변경된 환불 정책 &middot;
+            회사 세부정보</span
+          >
+        </div>
+        <div class="footer__sites__link">
+          <div class="footer__sites__link__language">
+            <div>
+              <span><i class="fas fa-globe"></i></span>
+              <span>한국어(KR)</span>
+            </div>
+            <div><span>&#8361;</span> <span>KRW</span></div>
+          </div>
+          <div class="footer__sites__link__sns">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

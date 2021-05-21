@@ -37,6 +37,7 @@
   width: 300px;
   height: 48px;
   background-color: white;
+  font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,26 +72,46 @@
 }
 .nav-bar__myPage > div:first-child,
 .nav-bar__myPage > div:nth-child(2) {
-  margin-right: 30px;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 900;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar__myPage > div:first-child {
+  border-radius: 30px;
+  width: 100px;
+}
+.nav-bar__myPage > div:nth-child(2) {
+  width: 46px;
+  border-radius: 50%;
+}
+.nav-bar__myPage > div:first-child:hover,
+.nav-bar__myPage > div:nth-child(2):hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .nav-bar__myPage__menu {
   width: 77px;
   height: 42px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-left: 5px;
+  position: relative;
+}
+.nav-bar__myPage__menu:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .nav-bar__myPage__menu span:first-child {
   font-size: 15px;
 }
-.nav-bar__myPage__menu span:last-child {
+.nav-bar__myPage__menu span:nth-child(2) {
   width: 30px;
   height: 30px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -100,4 +121,9 @@
   justify-content: center;
   align-items: center;
   font-size: 20px;
+}
+.nav-bar__myPage__menu__red-dot {
+  position: absolute;
+  top: 0;
+  right: 3px;
 }

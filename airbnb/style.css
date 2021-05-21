@@ -1,6 +1,9 @@
 @import "nav-bar.css";
 @import "header-main.css";
 @import "section.css";
+@import "footer.css";
+
+@import "red-dot.css";
 
 * {
   box-sizing: border-box;
@@ -9,11 +12,17 @@
 body {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
+  margin: 0;
 }
 
-body {
+header {
   background: url(img/airbnb-bg.jpg) center center no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 60vh;
   margin: 0px;
+  display: flex;
+  align-items: center;
+}
+section {
+  margin: 0px 80px;
 }

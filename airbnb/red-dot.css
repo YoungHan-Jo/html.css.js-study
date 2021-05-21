@@ -1,0 +1,7 @@
+#red-dot {
+  background-color: #ff385c;
+  width: 13px;
+  height: 13px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
