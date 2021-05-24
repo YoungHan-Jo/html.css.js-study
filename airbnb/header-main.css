@@ -5,11 +5,13 @@
 .header-main__title {
   font-size: 45px;
   font-size: 60px;
+  line-height: 60px;
   margin: 0px;
 }
 
 .header-main p {
   font-size: 20px;
+  line-height: 20px;
 }
 
 .header-main button {
@@ -21,4 +23,5 @@
   width: 150px;
   height: 35px;
   border-radius: 10px;
+  cursor: pointer;
 }

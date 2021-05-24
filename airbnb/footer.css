@@ -42,6 +42,11 @@ footer ul {
   font-size: 14px;
 }
 
+.footer__sites__copyright span a {
+  text-decoration: none;
+  color: black;
+}
+
 .footer__sites__link {
   display: flex;
   align-items: center;
@@ -60,4 +65,5 @@ footer ul {
 }
 .footer__sites__link__sns i {
   margin-right: 10px;
+  cursor: pointer;
 }

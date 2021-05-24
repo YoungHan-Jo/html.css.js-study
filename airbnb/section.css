@@ -10,8 +10,8 @@
   gap: 20px;
 }
 .around__list__item {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
+  cursor: pointer;
 }
 .around__list__item img {
   width: 64px;
@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: center;
   font-size: 16px;
+  margin-left: 20px;
 }
 .around__list__item__info span:first-child {
   font-weight: 900;
@@ -39,6 +40,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
+.wherever__list__item {
+  cursor: pointer;
+}
 .wherever__list__item img {
   width: 100%;
   border-radius: 10px;
@@ -49,23 +53,28 @@
 }
 
 .toBeHost {
+  background: url(img/toBeHost.jpg) center center no-repeat;
+  background-size: cover;
   margin-top: 75px;
-  position: relative;
-}
-.toBeHost img {
-  width: 100%;
+  height: 402px;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
+
 .toBeHost__contents {
-  position: absolute;
-  top: 0;
   color: white;
+  margin-left: 80px;
 }
 .toBeHost__contents h1 {
   font-size: 48px;
+  margin: 0;
 }
 .toBeHost__contents p {
   font-size: 18px;
+  margin: 0;
+  margin-top: 12px;
 }
 .toBeHost__contents button {
   border: none;
@@ -75,6 +84,7 @@
   font-weight: 900;
   background-color: white;
   border-radius: 10px;
+  margin-top: 40px;
 }
 
 .experience {
@@ -96,6 +106,9 @@
 .experience__list__item img {
   border-radius: 10px;
   width: 100%;
+}
+.experience__list__item {
+  cursor: pointer;
 }
 
 .experience__list__item__info span:first-child {

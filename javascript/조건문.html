@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문</title>
+  </head>
+  <body>
+    <script>
+      const id = prompt("아이디를 입력해주세요.");
+      if (id === "pusanit") {
+        const pw = prompt("비밀번호를 입력해 주세요");
+        if (pw === "502") {
+          alert("인증에 성공했습니다.");
+        } else {
+          alert("인증에 실패했습니다.");
+        }
+      } else {
+        alert("인증에 실패했습니다.");
+      }
+    </script>
+  </body>
+</html>
