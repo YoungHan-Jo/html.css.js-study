@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex2</title>
+  </head>
+  <body>
+    <script>
+      function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+      }
+
+      function yes() {
+        alert("동의 했습니다.");
+      }
+      function no() {
+        alert("취소했습니다.");
+      }
+    </script>
+  </body>
+</html>
