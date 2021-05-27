@@ -9,8 +9,8 @@ img2.setAttribute("src", "images/dice6.png");
 var ranNum1 = Math.floor(Math.random() * 6) + 1;
 var ranNum2 = Math.floor(Math.random() * 6) + 1;
 
-img1.setAttribute("src", "images/dice" + ranNum1 + ".png");
-img2.setAttribute("src", "images/dice" + ranNum2 + ".png");
+img1.setAttribute("src", `images/dice${ranNum1}.png`);
+img2.setAttribute("src", `images/dice${ranNum2}.png`);
 
 function result() {
   if (ranNum1 > ranNum2) {
