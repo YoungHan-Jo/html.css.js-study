@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div#app,
+      div#app > h1,
+      div#app > h1 > a {
+        margin: 5px;
+        padding: 5px;
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>
+        <a href="http://www.naver.com">네이버</a>
+      </h1>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      //a 태그 클릭 배경 blue로
+      $("#app>h1>a").on("click", function (event) {
+        //기본기능 막기(a태그,form태그)
+        //   event.preventDefault();
+        //태그 겹쳐있을 경우 이벤트 전파 막기
+        //   event.stopPropagation(); // 이벤트 조상 태그한테 전파 막기. 딱 이 태그만 addlistener 주기
+
+        $(this).css("backgroundColor", "lightblue");
+
+        return false;
+      });
+      //h1태그 클릭 css() 백그라운드클릭 lightred
+      $("#app>h1").click(function () {
+        $(this).css("backgroundColor", "red");
+      });
+    </script>
+  </body>
+</html>

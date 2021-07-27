@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="btn">버튼</button>
+      <br />
+      <input type="checkbox" id="chk" />체크박스
+      <br />
+      <img src="/img/apple.jpg" />
+      <img src="/img/banana.jpg" />
+      <img src="/img/kiwi.jpg" />
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $("#btn").on("click", function () {
+        // //attr(), prop() 함수 : 문서객체의 속성을 제어하는 용도
+        // $("img:first").attr("src", "img/kiwi.jpg"); // setter 역할
+        // $("img:first").prop("src", "img/kiwi.jpg"); // setter 역할
+
+        // // var str = $("img:first").attr("src"); // getter
+        // var str = $("img:first").prop("src"); // getter.
+
+        // console.log(str);
+
+        // str = $("#chk").attr("checked");
+
+        // console.log("attr(): " + str);
+
+        // str = $("#chk").prop("checked");
+
+        // console.log("prop():" + str);
+
+        $("#chk").prop("checked", true); //setter
+
+        $("img").prop("width", 200);
+
+        // $("img").prop("width", function (index) {
+        //   return (index + 1) * 100;
+        // });
+
+        $("img").prop("width", 200).prop("height", 250);
+
+        $("img").prop({
+          width: 200,
+          height: 250,
+        });
+
+        $("img").prop({
+          width: function (index) {
+            return (index + 1) * 100;
+          },
+          height: 250,
+        });
+      });
+    </script>
+  </body>
+</html>

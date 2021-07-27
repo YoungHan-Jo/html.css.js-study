@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button id="btn">버튼</button>
+      <br />
+
+      <div>div0</div>
+      <div>div1</div>
+      <div>div2</div>
+      <h1>head0</h1>
+      <h1>head1</h1>
+      <h1>head2</h1>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      //이벤트
+      $("#app>div").on("click", function (event) {
+        //this == event.target
+        $(this).append("*");
+      });
+
+      $("div#app>h1").on("mouseover", function () {
+        $(this).append("+");
+      });
+    </script>
+  </body>
+</html>

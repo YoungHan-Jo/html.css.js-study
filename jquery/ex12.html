@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>남은글자수 : <span>100</span></h2>
+      <textarea cols="60" rows="5"></textarea>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      //키 이벤트 keydown , keyup , keypress
+      $("textarea").keyup(function () {
+        const inputLength = $(this).val().length;
+        const remainLength = 100 - inputLength;
+        $("span").html(remainLength);
+        if (remainLength >= 0) {
+          $("span").css("color", "green");
+        } else {
+          $("span").css("color", "red");
+        }
+      });
+    </script>
+  </body>
+</html>

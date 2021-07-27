@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.section > img {
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button id="btn">시작</button>
+      <button id="btnStop">중지버튼</button>
+      <br />
+      <div class="section">
+        <img src="img/apple.jpg" />
+        <img src="img/banana.jpg" />
+        <img src="img/cherry.jpg" />
+        <img src="img/kiwi.jpg" />
+        <img src="img/mango.jpg" />
+      </div>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      var taskId;
+      var taskId2;
+
+      $("#btn").on("click", function () {
+        //2초 이후에 한번만 실행
+        taskId2 = setTimeout(function () {
+          console.log("2초 후 출력됨");
+        }, 2000);
+
+        // 2초 주기로 동작 수행
+        taskId = setInterval(function () {
+          $("img").first().appendTo("div.section");
+        }, 2000);
+      });
+
+      $("#btnStop").on("click", function () {
+        clearInterval(taskId);
+        clearInterval(taskId2);
+      });
+    </script>
+  </body>
+</html>

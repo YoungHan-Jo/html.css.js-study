@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 {
+        background-color: yellowgreen;
+        border: 1px solid black;
+      }
+      #app > div {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h2>열기 & 닫기</h2>
+      <div>
+        <h3>제목</h3>
+        <p>내용1</p>
+      </div>
+
+      <h2>열기 & 닫기</h2>
+      <div>
+        <h3>제목</h3>
+        <p>내용2</p>
+      </div>
+
+      <h2>열기 & 닫기</h2>
+      <div>
+        <h3>제목</h3>
+        <p>내용3</p>
+      </div>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $("h2").on("click", function () {
+        // 애니매이션 효과 함수 종류
+        //show() 보이기, hide()숨기기, toggle()토글동작
+        //slideDown() 슬라이드 효과 보이기, slideUp() 숨기기, slideToggle()토글
+
+        //fadeIn(), fadeOut(), fadeToggle
+
+        //밀리초 애니매이션 동작, 애니메이션 끝난후 호출할 함수 정의, 시간 들어가면 디폴드 슬라이드형식
+        $(this)
+          .next()
+          .fadeToggle(1000, function () {});
+      });
+    </script>
+  </body>
+</html>

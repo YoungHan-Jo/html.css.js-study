@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="btn">버튼</button>
+      <br />
+      아이디 : <input type="text" /><br />
+      비밀번호 : <input type="password" />
+      <table border="1" id="tbl">
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>혈액형</th>
+            <th>지역</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>홍길동</td>
+            <td>A</td>
+            <td>부산</td>
+          </tr>
+          <tr>
+            <td>이몽룡</td>
+            <td>B</td>
+            <td>서울</td>
+          </tr>
+          <tr>
+            <td>성춘향</td>
+            <td>O</td>
+            <td>대전</td>
+          </tr>
+          <tr>
+            <td>이순신</td>
+            <td>AB</td>
+            <td>대구</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $("#btn").click(function () {
+        //속성 선택자
+        // 태그명[속성명=속성값]
+        //태그명[속성명^=속성값] ^= 시작값
+        //태그명[속성명~=속성값] ~= 포함값
+        //태그명[속성명$=속성값] $= 끝값
+
+        // const id = $('input[type="text"]').val();
+        // const passwd = $("input[type=password]").val(); // getter 역할
+
+        $('input[type="text"]').val("호빵맨"); // setter 역할
+
+        //태그명: odd 홀수 요소
+        //태그명: even 짝수 요소
+        //태그명: first 첫번째 요소
+        //태그명: last 마지막 요소
+
+        $("#tbl tr:odd").css("background-color", "yellow"); // index 번호 홀수
+
+        $("#tbl tr:even").css("background-color", "green"); // index 번호 짝수
+
+        $("#tbl tr:first")
+          .css("background-color", "blue")
+          .css("color", "white");
+      });
+    </script>
+  </body>
+</html>

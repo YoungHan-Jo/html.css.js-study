@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.section {
+        background-color: lightyellow;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button id="btn">버튼</button>
+      <br />
+      <div class="section">
+        <p>본문 내용</p>
+      </div>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $("#btn").on("click", function () {
+        // html() : html 내용을 설정
+        //append() : html 내용을 기존내용 뒷부분으로 추가
+        //appendTo() : append()와 기능은 동일함. / 선택자가 뒤에 표기됨.
+        //prepend() : html 내용을 기존내용 앞부분으로 추가
+
+        var h1 = "<h1>header1</h1>";
+        var h2 = "<h1>header2</h1>";
+
+        $("div.section").prepend(h1);
+
+        $("div.section").append(h2);
+        $(h2).appendTo("div.section");
+      });
+    </script>
+  </body>
+</html>

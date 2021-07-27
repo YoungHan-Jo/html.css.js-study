@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #app {
+        background-color: gainsboro;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 10px 10px 150px;
+      }
+
+      div.box {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        border: 5px solid black;
+        margin: 10px;
+        cursor: pointer;
+      }
+      div.box:hover {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+      <div class="box">데이터</div>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $(".box").click(function () {
+        $(".box").css("backgroundColor", "gainsboro");
+        $(this).css("backgroundColor", "yellow");
+
+        $(this).removeData("key");
+
+        //data 속성으로 값 저장하기
+        $(this).data("key", "aaa");
+      });
+    </script>
+  </body>
+</html>
