@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        background-color: darkgoldenrod;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>제목</h1>
+      <hr />
+      <ul>
+        <li>
+          <h3>제목1</h3>
+          <p>A</p>
+          <a>aaa</a>
+          <span>AAA</span>
+        </li>
+        <li>
+          <h3>제목2</h3>
+          <p>B</p>
+          <a>bbb</a>
+          <span>BBB</span>
+        </li>
+        <li>
+          <h3>제목3</h3>
+          <p>C</p>
+          <a>ccc</a>
+          <span>CCC</span>
+        </li>
+      </ul>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $("a").on("click", function (event) {
+        event.preventDefault();
+        // 요소 탐색 관련 jQuery 메소드
+        // 형제 요소 안에서, 이전 prev() 다음 next()
+        // 부모.조상 탐색 closet('선택자'), 자식자손탐색 find('선택자')
+        $(this).prev().css("color", "red");
+        $(this).next().css("color", "blue");
+
+        const $div = $(this).closest("#app");
+        const $h1 = $div.find("h1");
+        console.log($div.html());
+        console.log($h1.html());
+
+        const $li = $(this).closest("li");
+        const $h3 = $li.find("h3");
+        console.log($h3.html());
+      });
+    </script>
+  </body>
+</html>

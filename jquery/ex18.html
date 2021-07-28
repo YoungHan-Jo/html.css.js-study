@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>
+        <button type="button">버튼</button>
+      </p>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      // $("button").on("click", function () {
+      //   const str = '<p><button type="button">버튼</button></p>';
+
+      //   $("#app").append(str);
+      // });
+      // 처음에 서버가 받은 정보만 적용가능. 이후 추가된 코드는 적용 불가 - > 이벤트연결 위임으로 해결가능
+
+      //이벤트 연결 위임 (고정된 부모를기준으로, 부모밑에 있는 기존 요소+ 새로생긴 요소에도 적용가능.)
+      $("#app").on("click", "button", function () {
+        const str = '<p><button type="button">버튼</button></p>';
+
+        $("#app").append(str);
+      });
+    </script>
+  </body>
+</html>
